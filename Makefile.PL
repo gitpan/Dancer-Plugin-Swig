@@ -27,10 +27,8 @@ my %WriteMakefileArgs = (
     "Test::Most" => 0,
     "WebService::SwigClient" => 0
   },
-  "TEST_REQUIRES" => {
-    "Test::Most" => 0
-  },
-  "VERSION" => "0.01",
+  "TEST_REQUIRES" => {},
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }

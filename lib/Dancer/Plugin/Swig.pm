@@ -1,10 +1,7 @@
 use strict;
 use warnings;
 package Dancer::Plugin::Swig;
-BEGIN {
-  $Dancer::Plugin::Swig::AUTHORITY = 'cpan:LOGIE';
-}
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use Dancer ':syntax';
 use Dancer::Plugin;
@@ -38,23 +35,6 @@ sub initialize {
 register_plugin;
 1;
 
-__END__
-
-=pod
-
-=head1 NAME
-
-Dancer::Plugin::Swig
-
-=head1 VERSION
-
-version 0.01
-
-=head1 DESCRIPTION
-
-B<Dancer::Plugin::Swig> provides syntax to interact with a Swig as a service
-application.
-
 =head1 NAME
 
 Dancer::Plugin::Swig - A plugin for swig client
@@ -80,19 +60,13 @@ In your Dancer application:
 
   true;
 
+=head1 DESCRIPTION
+
+B<Dancer::Plugin::Swig> provides syntax to interact with a Swig as a service
+application.
+
 =head1 LICENSE
 
 Copyright (c) 2014 Logan Bell and Shutterstock Inc (http://shutterstock.com).  All rights reserved.  This program is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
-
-=head1 AUTHOR
-
-Logan Bell <logie@cpan.org>
-
-=head1 COPYRIGHT AND LICENSE
-
-This software is copyright (c) 2014 by Logan Bell.
-
-This is free software; you can redistribute it and/or modify it under
-the same terms as the Perl 5 programming language system itself.
 
 =cut
